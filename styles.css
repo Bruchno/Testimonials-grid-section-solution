@@ -74,6 +74,8 @@ body {
     display: flex;
     align-self: center;
     object-fit: contain;
+    align-items: center;
+    gap: 1rem;
 }
 
 .full-name, .user-info {
