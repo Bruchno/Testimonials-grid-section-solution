@@ -152,7 +152,13 @@ body {
    }
 }
  @media (prefers-reduced-motion: no-preference) {
-  * {
-    transition: all 1s;
+  .post-item {
+    /* ... existing styles ... */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
   }
 }
